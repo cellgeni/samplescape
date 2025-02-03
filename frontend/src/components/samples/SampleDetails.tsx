@@ -38,6 +38,10 @@ const SampleDetails: React.FC<Props> = ({ sample_id }) => {
             dataIndex: ['id_run']
         },
         {
+            title: 'Library type',
+            dataIndex: ['library_type']
+        },
+        {
             title: 'Position',
             dataIndex: ['position']
         },
@@ -80,3 +84,4 @@ const SampleDetails: React.FC<Props> = ({ sample_id }) => {
 };
 
 export default SampleDetails;
+

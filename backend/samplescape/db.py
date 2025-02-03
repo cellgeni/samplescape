@@ -193,6 +193,7 @@ def get_sample(sample_id: int):
             study.abbreviation as study_abbreviation,
             sample.*,
             product_metrics.id_run,
+            flowcell.pipeline_id_lims as library_type,
             flowcell.position,
             flowcell.tag_index,
             run_status_dict.description AS run_description,
